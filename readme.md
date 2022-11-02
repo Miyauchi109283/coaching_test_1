@@ -2,7 +2,7 @@
 SpringBootコース フレームワークテスト1
 
 ## clone時の注意点
-clone時は以下のコマンドを利用し、ローカルリポジトリの名称が `coaching_test_1` になるようにしてください。
+clone時は、Eclipseのワークスペースとなっているディレクトリにて、以下のコマンドを利用し、ローカルリポジトリの名称が `coaching_test_1` になるようにしてください。
 
 ```git
 git clone https://github.com/SLStudioGithub/CoachingTest-SpringBoot-FWTest01.git coaching_test_1
@@ -31,3 +31,13 @@ clone後、解答提出用にご自身で作成していただいたリポジト
     ```
     git push
     ```
+    
+## Eclipseへのインポート
+cloneしてきたプロジェクトのインポートを行います。
+Eclipseにて以下の操作を行いましょう。
+
+1. `ファイル` をクリック
+2. メニューの中から`インポート` をクリック
+3. Gradle > 既存のGladleプロジェクト を選択し `次へ` をクリック
+4. プロジェクト・ルート・ディレクトリー の欄にcloneしてきたプロジェクトのパスを設定（参照 を利用すると良い）
+5. `完了` をクリック
