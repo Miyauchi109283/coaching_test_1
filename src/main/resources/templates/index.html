@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="UTF-8">
-<title>一覧</title>
+    <meta charset="UTF-8">
+    <title>一覧</title>
 </head>
 <body>
 <div>
     <h2>クエリパラメーター一覧</h2>
     <ul>
-    	<!-- Q1-2 -->
-        <li></li>
-        <li></li>
+        <!-- Q1-2 -->
+        <li>食べ物：<span th:text="${food} ?: 'なし'"></span></li>
+        <li>飲み物：<span th:text="${drink} ?: 'なし'"></span></li>
     </ul>
 </div>
+
 <!-- Q2-3 -->
-<a>次のページへのリンク</a>
+<!-- 次のページへのリンク -->
+<a th:href="@{/nextPage(food=${food}, drink=${drink})}">次のページへのリンク</a>
 </body>
 </html>
